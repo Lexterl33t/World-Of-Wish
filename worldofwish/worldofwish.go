@@ -93,8 +93,7 @@ func (rs *Races_t) Attack(enemy *Races_t) {
 			enemy.SetVie(0)
 			return
 		} else {
-			fmt.Println(enemy.GetVie())
-			enemy.SetVie(enemy.GetVie() - rs.GetDegats())
+=			enemy.SetVie(enemy.GetVie() - rs.GetDegats())
 			fmt.Println(rs.GetName(), "attack", enemy.GetName())
 			return
 		}
